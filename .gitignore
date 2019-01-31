@@ -7,7 +7,7 @@
 .vscode/
 tsconfig.json
 jsconfig.json
-.history/
+
 ### macOS ###
 # General
 .DS_Store

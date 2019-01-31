@@ -1,12 +1,16 @@
-# SPA
+# MPA
 
-基于 webpack4 的单页面应用框架
+基于 webpack 的多页面应用框架
 
 ## 使用说明
 
 ```bash
 # 开发
 npm run dev # 或 npm start
+# 访问方式
+# http://localhost:8888/index.html
+# http://localhost:8888/about.html
+# http://localhost:8888/contact.html
 
 # 预发布（用于上测试服）打包
 npm run pre
@@ -36,7 +40,7 @@ npm run fix
 │   └── webpack.prod.js
 ├── dist # 上线打包目录
 ├── pre # 预发布打包目录
-└── src # 源码目录
+└── src
     ├── api # 公共接口、日志处理目录（代码组织方式供参考）
     │   ├── config.js
     │   ├── data.js
@@ -52,17 +56,30 @@ npm run fix
     │       ├── SL-es.js
     │       ├── SLAPP-es.js
     │       └── responsive.js
-    ├── css # 页面css
-    │   └── index.scss
-    ├── img # 图片
-    ├── index.html  # 入口模板
-    └── js  # 业务js目录
-        ├── index.js  # 入口js
-        ├── math.js
-        └── print.js
+    └── pages # 多页目录，每个页面一个目录，注意：每个页面目录下只允许有一个模板html和一个入口js，否则会影响打包。
+        ├── about
+        │   ├── about.html  # 模板html
+        │   ├── about.js  # 入口js
+        │   ├── about.scss  # 页面样式
+        │   ├── img
+        │   └── js  # 其他专用模块js
+        ├── contact
+        │   ├── contact.html  # 模板html
+        │   ├── contact.js  # 入口js
+        │   ├── contact.scss  # 页面样式
+        │   ├── img
+        │   └── js  # 其他专用模块js
+        └── index
+            ├── img
+            ├── index.html  # 模板html
+            ├── index.js  # 入口js
+            ├── index.scss  # 页面样式
+            └── js  # 其他专用模块js
+                ├── math.js
+                └── print.js
 ```
 
-**注意：入口模板和入口 js 请不要改名，如需改名，需要修改 webpack 配置**
+**注意：每个页面目录下只允许有一个模板 html 和一个入口 js，否则会影响打包。**
 
 ## 浏览器兼容
 
