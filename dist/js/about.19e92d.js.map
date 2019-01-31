@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/about/js/other.js"],"names":["console","log"],"mappings":"uIACEA,QAAQC,IAAI","file":"js/about.19e92d.js","sourcesContent":["export function log() {\r\n  console.log('about other.js log...');\r\n}\r\n"],"sourceRoot":""}

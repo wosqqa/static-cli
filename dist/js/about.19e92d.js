@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{"B/qo":function(o,n,s){},"ym/C":function(o,n,s){"use strict";s.r(n);s("B/qo");console.log("about other.js log...")}},[["ym/C",0]]]);
+//# sourceMappingURL=about.19e92d.js.map

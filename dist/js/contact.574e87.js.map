@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/contact/js/other.js"],"names":["console","log"],"mappings":"mIACEA,QAAQC,IAAI","file":"js/contact.574e87.js","sourcesContent":["export function log() {\r\n  console.log('contact other.js log...');\r\n}\r\n"],"sourceRoot":""}

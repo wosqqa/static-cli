@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{R4fe:function(o,n,c){},Yr54:function(o,n,c){"use strict";c.r(n);c("R4fe");console.log("contact other.js log...")}},[["Yr54",0]]]);
+//# sourceMappingURL=contact.574e87.js.map
